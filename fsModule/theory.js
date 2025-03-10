@@ -42,18 +42,18 @@
  * 
  * 
  * * *  FS Module – CRUD Operations :- 
+ * * * * * Theory of fs-Module Synchronous :-
  * 
- * 
-        1.) Create (fs.writeFile)
+        1.) Create (fs.writeFileSync)
         • Writes content to the file. If the file does not exist, it creates one.
  
-        2.) Read (fs.readFile)
+        2.) Read (fs.readFileSync)
         • Reads the content of the file asynchronously and logs it.
  
-        3.) Update (fs.appendFile)
+        3.) Update (fs.appendFileSync)
         • Appends new content to the file without overwriting the existing content.
  
-        4.) Delete (fs.unlink)
+        4.) Delete (fs.unlinkSync)
         • Deletes the file completely.
  
 
