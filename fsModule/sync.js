@@ -100,15 +100,17 @@ const fs = require("fs");
 ///////*************************************************************************************************************** */
 
 
-const fileName = "text.txt";
-const updateAppendFile = fs.appendFileSync(fileName, "\nThis is the second line using append or update file.", 'utf-8');
-// // // Here, \n is used to get the new line. If it is not used then data appears on the same line;
-console.log(updateAppendFile);
-// // // Here, we are getting the Output on Terminal as :- undefined
-// // // Therefore, on the text.txt file the new line is added as per we want.
-// // // Now, on text.txt file contains :
-// // // This is the first file created by using Node.js with the help of FS Module.
-// // // This is the second line using append or update file.
+// const fileName = "text.txt";
+// const updateAppendFile = fs.appendFileSync(fileName, "\nThis is the second line using append or update file.", 'utf-8');
+// // // // Here, \n is used to get the new line. If it is not used then data appears on the same line;
+// console.log(updateAppendFile);
+
+// // // // Here, we are getting the Output on Terminal as :- undefined
+// // // // Therefore, on the text.txt file the new line is added as per we want.
+// // // // Now, on text.txt file contains :
+// // // // This is the first file created by using Node.js with the help of FS Module.
+// // // // This is the second line using append or update file.
+
 
 ////////----------------------------------------------------------------------------------------------------------
 
@@ -123,6 +125,35 @@ console.log(updateAppendFile);
 // // ? options : Optional. Encoding options ('utf8').
 
 */
+
+///////*************************************************************************************************************** */
+//////------------------------------------------------------------------------------------------------------------------
+///////*************************************************************************************************************** */
+
+
+
+const fileName = "text.txt";
+const deleteFile = fs.unlinkSync(fileName);
+console.log(deleteFile);
+// // // // Here, we are getting the Output on Terminal as :- undefined
+// // // // Therefore, we get the output as the previously. We created the file text.txt file now it is deleted.
+
+
+////////----------------------------------------------------------------------------------------------------------
+
+
+// // // Theory of Delete (fs.unlinkSync) :--
+
+
+/*
+// // Delete File (fs.unlinkSync()) :- Deletes a file by its path.
+
+// // ! syntax : fs.unlinkSync(filePath);
+// // ? filePath : The path of the file to delete.
+
+*/
+
+
 
 ///////*************************************************************************************************************** */
 //////------------------------------------------------------------------------------------------------------------------
