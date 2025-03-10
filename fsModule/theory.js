@@ -18,3 +18,52 @@
 //  */
 
 
+
+/***
+ * 
+ * * * * Theory :- 
+ * 
+ * * * * * * FS Module :-
+ * 
+ * 
+ * FS Module - Node.js :-
+ * 
+        The fs (File System) module in Node.js is a core module that allows you 
+        to work with the file system, enabling you to read, write, update, delete, 
+        and watch files.
+
+        
+        Let’s see how to URUD operation in a Synchronous way.
+
+
+ //////// ------------------------------------------------------------------------------------------------------------------
+
+ 
+ * 
+ * 
+ * * *  FS Module – CRUD Operations :- 
+ * 
+ * 
+        1.) Create (fs.writeFile)
+        • Writes content to the file. If the file does not exist, it creates one.
+ 
+        2.) Read (fs.readFile)
+        • Reads the content of the file asynchronously and logs it.
+ 
+        3.) Update (fs.appendFile)
+        • Appends new content to the file without overwriting the existing content.
+ 
+        4.) Delete (fs.unlink)
+        • Deletes the file completely.
+ 
+
+ //////// ------------------------------------------------------------------------------------------------------------------
+
+ 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
