@@ -169,10 +169,27 @@ const filePath = path.join(__dirname, fileName);
 // // // // Here, we have use the path module for the proper clearification of path or directory to get or reach at that particularly path. Because sometime mishappening happens.
 
 const writeCreateFile = fs.writeFileSync(filePath, "Using the Path Module with FS Module.", "utf-8");
-console.log(writeCreateFile);
+// console.log(writeCreateFile);
+
 
 // // // // Here, we are getting the Output on Terminal as :- undefined
 // // // Therefore, Here we are getting the Output on Terminal as undefined and as well as we are able to see the new file is created named as "shivaText.txt". If we open that file we can see (Using the Path Module with FS Module.) as we have written the program to create "shivaText.txt" file and having this data or content inside it.
+
+
+
+///////*************************************************************************************************************** */
+//////------------------------------------------------------------------------------------------------------------------
+///////*************************************************************************************************************** */
+
+
+
+const newUpdatedFileName = "hemendrText.txt";
+const newFilePath = path.join(__dirname, newUpdatedFileName);
+// // // // So, here the Path Module helps us to find that file directory to rename it.
+const renameFile = fs.renameSync(filePath, newFilePath);
+console.log(renameFile);
+// // // // Here, we are getting the Output on Terminal as :- undefined
+// // // // Therefore, previously file named as "shivaText.txt" now rename it to "hemendrText.txt". Whereas, the content is same not changed while changing or renaming it.
 
 
 
