@@ -132,9 +132,10 @@ const fs = require("fs");
 
 
 
-const fileName = "text.txt";
-const deleteFile = fs.unlinkSync(fileName);
-console.log(deleteFile);
+// const fileName = "text.txt";
+// const deleteFile = fs.unlinkSync(fileName);
+// console.log(deleteFile);
+
 // // // // Here, we are getting the Output on Terminal as :- undefined
 // // // // Therefore, we get the output as the previously. We created the file text.txt file now it is deleted.
 
@@ -152,6 +153,26 @@ console.log(deleteFile);
 // // ? filePath : The path of the file to delete.
 
 */
+
+
+
+///////*************************************************************************************************************** */
+//////------------------------------------------------------------------------------------------------------------------
+///////*************************************************************************************************************** */
+
+
+
+const path = require('path');
+
+const fileName = "shivaText.txt";
+const filePath = path.join(__dirname, fileName);
+// // // // Here, we have use the path module for the proper clearification of path or directory to get or reach at that particularly path. Because sometime mishappening happens.
+
+const writeCreateFile = fs.writeFileSync(filePath, "Using the Path Module with FS Module.", "utf-8");
+console.log(writeCreateFile);
+
+// // // // Here, we are getting the Output on Terminal as :- undefined
+// // // Therefore, Here we are getting the Output on Terminal as undefined and as well as we are able to see the new file is created named as "shivaText.txt". If we open that file we can see (Using the Path Module with FS Module.) as we have written the program to create "shivaText.txt" file and having this data or content inside it.
 
 
 
