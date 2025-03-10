@@ -72,9 +72,9 @@ const fs = require("fs");
 
 
 
-const fileName = "text.txt";
-const readingFile = fs.readFileSync(fileName, 'utf-8');
-console.log(readingFile);
+// const fileName = "text.txt";
+// const readingFile = fs.readFileSync(fileName, 'utf-8');
+// console.log(readingFile);
 
 // // Here we are getting the Output on Terminal in proper format if we add the utf-8:-
 // // This is the first file created by using Node.js with the help of FS Module.
@@ -94,6 +94,35 @@ console.log(readingFile);
 */
 
 
+
+///////*************************************************************************************************************** */
+//////------------------------------------------------------------------------------------------------------------------
+///////*************************************************************************************************************** */
+
+
+const fileName = "text.txt";
+const updateAppendFile = fs.appendFileSync(fileName, "\nThis is the second line using append or update file.", 'utf-8');
+// // // Here, \n is used to get the new line. If it is not used then data appears on the same line;
+console.log(updateAppendFile);
+// // // Here, we are getting the Output on Terminal as :- undefined
+// // // Therefore, on the text.txt file the new line is added as per we want.
+// // // Now, on text.txt file contains :
+// // // This is the first file created by using Node.js with the help of FS Module.
+// // // This is the second line using append or update file.
+
+////////----------------------------------------------------------------------------------------------------------
+
+// // // Theory of Update (fs.appendFileSync) :--
+
+/*
+// // fs.appendFileSync() :-  Appends data to a file. If the file does not exist, it creates the file.
+
+// // ! syntax : fs.appendFileSync(filePath, data, options);
+// // ? filePath : File path to append to.
+// // ? data : Content to add to the file.
+// // ? options : Optional. Encoding options ('utf8').
+
+*/
 
 ///////*************************************************************************************************************** */
 //////------------------------------------------------------------------------------------------------------------------

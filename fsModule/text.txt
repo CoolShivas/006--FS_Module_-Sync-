@@ -1,1 +1,2 @@
 This is the first file created by using Node.js with the help of FS Module.
+This is the second line using append or update file.
